@@ -1,12 +1,7 @@
-const list =
-  React.createElement('div', {},
-    React.createElement('h1', {}, 'My favorite ice cream flavors'),
-    React.createElement('ul', {},
-      [
-        React.createElement('li', { class: 'brown' }, 'Chocolate'),
-        React.createElement('li', { class: 'white' }, 'Vanilla'),
-        React.createElement('li', { class: 'yellow' }, 'Banana')
-      ]
-    ));
+const title = React.createElement('h1', {}, 'My First React Code')
+const container = React.createElement('div', {}, title);
 
-ReactDOM.render(list, document.getElementById('main'));
+ReactDOM.render(
+    container,
+    document.getElementById('main')
+)
